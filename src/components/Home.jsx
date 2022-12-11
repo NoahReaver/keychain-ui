@@ -8,6 +8,7 @@ import NavBarIcon from "./NavBarIcon";
 import homeIcon from "../assets/icons/home-variant.svg";
 import aboutIcon from "../assets/icons/information.svg";
 import { useEffect, useRef, useState } from "react";
+import TextExpand from "./TextExpand";
 
 export default function Home() {
   const [homeRef, aboutRef] = [useRef(), useRef()];
@@ -28,6 +29,23 @@ export default function Home() {
         </p>
       </div>
       <div className={styles.contentContainer}>
+        <div className={styles.textContainer}>
+          <h3 className={styles.contentTitle}>HOW IT WORKS</h3>
+          <div>
+            <TextExpand
+              title="Connect a wallet to create a profile."
+              content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla earum fugit ipsum debitis. Aut aliquid et illo dolore hic aperiam culpa sint quo, magnam iste commodi ipsum quibusdam repellat excepturi, quam dolorum? Distinctio ipsum soluta expedita beatae, quibusdam nemo dolorem voluptas laboriosam qui corrupti perspiciatis libero nulla natus repellat!"
+            />
+            <TextExpand
+              title="Add another wallet to your profile."
+              content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla earum fugit ipsum debitis. Aut aliquid et illo dolore hic aperiam culpa sint quo, magnam iste commodi ipsum quibusdam repellat excepturi, quam dolorum? Distinctio ipsum soluta expedita beatae, quibusdam nemo dolorem voluptas laboriosam qui corrupti perspiciatis libero nulla natus repellat!"
+            ></TextExpand>
+            <TextExpand
+              title="View all your NFTs in the gallery."
+              content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla earum fugit ipsum debitis. Aut aliquid et illo dolore hic aperiam culpa sint quo, magnam iste commodi ipsum quibusdam repellat excepturi, quam dolorum? Distinctio ipsum soluta expedita beatae, quibusdam nemo dolorem voluptas laboriosam qui corrupti perspiciatis libero nulla natus repellat!"
+            ></TextExpand>
+          </div>
+        </div>
         <ConnectWalletBtn />
       </div>
 

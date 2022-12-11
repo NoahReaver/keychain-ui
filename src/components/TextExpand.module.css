@@ -1,0 +1,35 @@
+@font-face {
+  font-family: industry-book;
+  src: url("../assets/fonts/Industry/Industry-Book.ttf");
+}
+.arrowContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.downArrow {
+  width: 2rem;
+  filter: invert(35%) sepia(25%) saturate(3620%) hue-rotate(245deg)
+    brightness(92%) contrast(87%);
+  transform: rotate(90deg);
+}
+
+.upArrow {
+  width: 2rem;
+  filter: invert(35%) sepia(25%) saturate(3620%) hue-rotate(245deg)
+    brightness(92%) contrast(87%);
+  transform: rotate(-90deg);
+}
+
+.text {
+  font-family: industry-book;
+  color: #ffffff;
+  text-align: center;
+  width: 80vw;
+  max-width: 350px;
+
+  background-color: #292c37;
+  padding: 1.2rem;
+  border-radius: 0.2rem;
+}
