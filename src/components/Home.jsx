@@ -18,8 +18,6 @@ export default function Home() {
     setNavbarSelector(homeRef.current.getBoundingClientRect().left);
   }, []);
 
-  console.log(navbarSelector);
-
   return (
     <div>
       <div className={styles.logoContainer}>
@@ -29,7 +27,9 @@ export default function Home() {
           multiple wallets to be accessible by one account.
         </p>
       </div>
-      <ConnectWalletBtn />
+      <div className={styles.contentContainer}>
+        <ConnectWalletBtn />
+      </div>
 
       <div className={styles.navbar}>
         <NavBar

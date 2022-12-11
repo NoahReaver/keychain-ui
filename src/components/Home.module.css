@@ -8,6 +8,11 @@
   src: url("../assets/fonts/BlenderPro/BLENDERPRO-HEAVY.TTF");
 }
 
+.contentContainer {
+  background-color: #26272a;
+  height: 80vh;
+}
+
 .logoContainer {
   background-color: #131417;
   width: 100%;
@@ -46,21 +51,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 7.5rem;
-  width: 4rem;
+  height: 5.5rem;
+  width: 3.5rem;
 }
 
 .navbarHomeIcon img {
-  width: 50px;
+  width: 35px;
   /* https://codepen.io/sosuke/pen/Pjoqqp Filter generator for #be7dff */
   filter: invert(52%) sepia(63%) saturate(1727%) hue-rotate(226deg)
     brightness(103%) contrast(101%);
 }
 
 .navbarHomeIcon div {
+  position: relative;
   color: #be7dff;
   font-family: "blenderpro-heavy";
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .navbarAboutIcon {
@@ -68,19 +74,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 7.5rem;
-  width: 4rem;
+  height: 5.5rem;
+  width: 3.5rem;
 }
 
 .navbarAboutIcon img {
-  width: 50px;
+  width: 30px;
   /* https://codepen.io/sosuke/pen/Pjoqqp Filter generator for #be7dff */
   filter: invert(52%) sepia(63%) saturate(1727%) hue-rotate(226deg)
     brightness(103%) contrast(101%);
 }
 
 .navbarAboutIcon div {
+  position: relative;
   color: #be7dff;
   font-family: "blenderpro-heavy";
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
