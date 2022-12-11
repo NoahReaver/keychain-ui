@@ -1,0 +1,36 @@
+@font-face {
+  font-family: industry-book;
+  src: url("../assets/fonts/Industry/Industry-Book.ttf");
+}
+
+:root {
+  --logo-bg-color: #131417;
+  --logo-text-color: #ffffff;
+}
+
+.logoContainer {
+  background-color: var(--logo-bg-color);
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.7rem;
+  gap: 1rem;
+}
+
+.logo {
+  width: 50%;
+  max-width: 200px;
+}
+
+.logoText {
+  color: var(--logo-text-color);
+  text-align: center;
+  font-family: "industry-book";
+  line-height: 1.8rem;
+  width: 80%;
+  max-width: 560px;
+}
