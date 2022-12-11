@@ -3,13 +3,13 @@
   src: url("../assets/fonts/Industry/Industry-Book.ttf");
 }
 
-:root {
-  --logo-bg-color: #131417;
-  --logo-text-color: #ffffff;
+@font-face {
+  font-family: blenderpro-heavy;
+  src: url("../assets/fonts/BlenderPro/BLENDERPRO-HEAVY.TTF");
 }
 
 .logoContainer {
-  background-color: var(--logo-bg-color);
+  background-color: #131417;
   width: 100%;
 
   display: flex;
@@ -22,15 +22,65 @@
 }
 
 .logo {
-  width: 50%;
+  width: 35%;
   max-width: 200px;
 }
 
 .logoText {
-  color: var(--logo-text-color);
+  color: #ffffff;
   text-align: center;
   font-family: "industry-book";
   line-height: 1.8rem;
-  width: 80%;
+  width: 95%;
   max-width: 560px;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.navbarHomeIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 7.5rem;
+  width: 4rem;
+}
+
+.navbarHomeIcon img {
+  width: 50px;
+  /* https://codepen.io/sosuke/pen/Pjoqqp Filter generator for #be7dff */
+  filter: invert(52%) sepia(63%) saturate(1727%) hue-rotate(226deg)
+    brightness(103%) contrast(101%);
+}
+
+.navbarHomeIcon div {
+  color: #be7dff;
+  font-family: "blenderpro-heavy";
+  font-size: 1.2rem;
+}
+
+.navbarAboutIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 7.5rem;
+  width: 4rem;
+}
+
+.navbarAboutIcon img {
+  width: 50px;
+  /* https://codepen.io/sosuke/pen/Pjoqqp Filter generator for #be7dff */
+  filter: invert(52%) sepia(63%) saturate(1727%) hue-rotate(226deg)
+    brightness(103%) contrast(101%);
+}
+
+.navbarAboutIcon div {
+  color: #be7dff;
+  font-family: "blenderpro-heavy";
+  font-size: 1.2rem;
 }

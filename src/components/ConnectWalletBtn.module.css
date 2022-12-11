@@ -3,11 +3,6 @@
   src: url("../assets/fonts/BlenderPro/BLENDERPRO-HEAVY.TTF");
 }
 
-:root {
-  --bg-color: #8d4dcd;
-  --font-color: #ffffff;
-}
-
 .icon {
   width: 2rem;
   filter: invert(100%);
@@ -20,11 +15,11 @@
 }
 
 .button {
-  background-color: var(--bg-color);
+  background-color: #8d4dcd;
   width: max-content;
   height: 3.3rem;
   border-radius: 1.65rem;
-  color: var(--font-color);
+  color: #ffffff;
   font-family: "blenderpro-heavy";
   font-size: 1.3rem;
   padding: 0 0.8rem;
