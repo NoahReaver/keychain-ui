@@ -35,10 +35,10 @@ export default function AppRoutes() {
 
 function Layout() {
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
-      <nav>
+      {/* <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -55,7 +55,7 @@ function Layout() {
         </ul>
       </nav>
 
-      <hr />
+      <hr /> */}
 
       {/* An <Outlet> renders whatever child route is currently active,
           so you can think about this <Outlet> as a placeholder for

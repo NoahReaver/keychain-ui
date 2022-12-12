@@ -1,17 +1,10 @@
 import { Link } from "react-router-dom";
+import styles from "./NavBarIcon.module.css";
 
 export default function NavBarIcon({ img, alt, text, className, linkTo }) {
   return (
     <Link to={linkTo} className={className}>
-      <div
-        style={{
-          width: "4rem",
-          height: "2rem",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <div className={styles.imgContainer}>
         <img src={img} alt={alt} />
       </div>
       <div>{text}</div>

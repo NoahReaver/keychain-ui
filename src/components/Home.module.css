@@ -13,25 +13,17 @@
   src: url("../assets/fonts/BlenderPro/BLENDERPRO-HEAVY.TTF");
 }
 
-.contentContainer {
-  background-color: #1f2127;
-  height: 50vh;
-
+/* In order of component appearance */
+.homeContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.contentTitle {
-  font-family: industry-bold;
-  color: #be7dff;
-  font-size: 1rem;
-  text-align: center;
+  height: 100%;
 }
 
 .logoContainer {
   background-color: #131417;
   width: 100%;
+  max-height: 19.75rem;
 
   display: flex;
   flex-direction: column;
@@ -54,6 +46,50 @@
   line-height: 1.8rem;
   width: 95%;
   max-width: 560px;
+}
+
+.contentContainer {
+  background-color: #1f2127;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding-bottom: 7rem;
+  padding-top: 1.2rem;
+
+  flex-grow: 1;
+  min-height: 0;
+}
+
+.textContainer {
+  flex-grow: 1;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.textContainer *::-webkit-scrollbar {
+  width: 0 !important;
+}
+.textContainer * {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.contentTitle {
+  font-family: industry-bold;
+  color: #be7dff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.expandedTextContainer {
+  overflow-y: auto;
 }
 
 .navbar {
@@ -108,15 +144,23 @@
   font-size: 1rem;
 }
 
-.textContainer {
-  height: 19rem;
-  overflow-y: auto;
-}
+/* Handle screen rotation in mobile */
+@media (orientation: landscape) {
+  .logoContainer {
+    max-height: 20%;
+    flex-direction: row;
+  }
 
-.textContainer::-webkit-scrollbar {
-  width: 0 !important;
-}
-.textContainer {
-  overflow: -moz-scrollbars-none;
-  -ms-overflow-style: none;
+  .logo {
+    max-width: 10%;
+  }
+
+  .navbarHomeIcon,
+  .navbarAboutIcon {
+    height: 4rem;
+  }
+
+  .contentContainer {
+    padding-bottom: 5.5rem;
+  }
 }

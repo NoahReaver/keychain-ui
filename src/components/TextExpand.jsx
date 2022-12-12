@@ -4,7 +4,7 @@ import downArrow from "../assets/icons/chevron-right.svg";
 import styles from "./TextExpand.module.css";
 
 export default function TextExpand({ title, content }) {
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(false); // Toggle showing for this single text frame
 
   return (
     <div>

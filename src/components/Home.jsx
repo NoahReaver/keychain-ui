@@ -11,7 +11,7 @@ import { useEffect, useRef, useState } from "react";
 import TextExpand from "./TextExpand";
 
 export default function Home() {
-  const [homeRef, aboutRef] = [useRef(), useRef()];
+  const [homeRef, aboutRef] = [useRef(), useRef(), useRef()];
 
   const [navbarSelector, setNavbarSelector] = useState();
 
@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.homeContainer}>
       <div className={styles.logoContainer}>
         <img src={logo} alt="logo" className={styles.logo} />
         <p className={styles.logoText}>
@@ -31,7 +31,7 @@ export default function Home() {
       <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
           <h3 className={styles.contentTitle}>HOW IT WORKS</h3>
-          <div>
+          <div className={styles.expandedTextContainer}>
             <TextExpand
               title="Connect a wallet to create a profile."
               content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla earum fugit ipsum debitis. Aut aliquid et illo dolore hic aperiam culpa sint quo, magnam iste commodi ipsum quibusdam repellat excepturi, quam dolorum? Distinctio ipsum soluta expedita beatae, quibusdam nemo dolorem voluptas laboriosam qui corrupti perspiciatis libero nulla natus repellat!"

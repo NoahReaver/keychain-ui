@@ -3,18 +3,9 @@
   src: url("../assets/fonts/BlenderPro/BLENDERPRO-HEAVY.TTF");
 }
 
-.icon {
-  width: 2rem;
-  filter: invert(100%);
-}
-
-.btnFrame {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-
+/* In order of component appearance */
 .button {
+  flex-shrink: 0;
   background-color: #8d4dcd;
   width: max-content;
   height: 3.3rem;
@@ -25,4 +16,15 @@
   padding: 0 0.8rem;
   padding-right: 5.5rem;
   padding-left: 1rem;
+}
+
+.btnFrame {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.icon {
+  width: 2rem;
+  filter: invert(100%);
 }
